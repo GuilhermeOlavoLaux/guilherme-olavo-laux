@@ -1,0 +1,37 @@
+.tech_skills {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.tech_skills-tittle {
+  text-align: center;
+}
+
+.tech_skills-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.tech_skills-container {
+  border: 2px black solid;
+  width: 400px;
+  padding: 20px;
+}
+
+.tech_skills-container-title {
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+.tech_skills-tittle2 {
+  margin-right: 40px;
+}
+
+.tech_skills-container-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}

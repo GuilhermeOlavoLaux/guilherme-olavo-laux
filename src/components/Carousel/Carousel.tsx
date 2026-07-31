@@ -18,7 +18,7 @@ export default function Carousel() {
   return (
     <section className="carousel-hero">
       <h1 className="carrousel-title">
-        <Terminal className="w-5 h-5 text-cyan-400" /> Experiência profissional
+        <Terminal className="" /> Experiência profissional
       </h1>
       <div className="carousel-wrapper">
         <div className="carousel-container">
