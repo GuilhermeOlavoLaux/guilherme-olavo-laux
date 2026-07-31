@@ -13,7 +13,7 @@ import ComplianceStation from "../../assets/ComplianceStation.jpg";
 import { Terminal } from "lucide-react";
 
 export default function Carousel() {
-  const swiperRef = useRef<SwiperType>();
+  const swiperRef = useRef<SwiperType | null>(null);
 
   return (
     <section className="carousel-hero">

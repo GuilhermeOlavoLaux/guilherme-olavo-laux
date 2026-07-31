@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Code2,
-  Layers,
-  Database,
-  Terminal,
-  Smartphone,
-  Cloud,
-} from "lucide-react";
+import { Code2, Layers, Database, Terminal, Smartphone } from "lucide-react";
 import "./TechSkills.css";
 
 interface Skill {
