@@ -1,0 +1,42 @@
+.carousel-hero {
+  background: white;
+  padding: 40px 6%;
+}
+
+.carousel-container {
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrousel-title {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* O CONTAINER DO SLIDE DO SWIPER */
+.carousel-item {
+  height: 250px; /* Altura ideal para os cards */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+/* PADRONIZAÇÃO PERFEITA DOS LOGOS */
+.carousel-item img {
+  width: 80%; /* Ocupa até 80% do card de forma responsiva */
+  height: 80%;
+  border-radius: 20%;
+}
+
+@media (max-width: 900px) {
+  .carousel-hero {
+    padding: 24px 5%;
+  }
+  .carousel-item {
+    height: 180px; /* Reduz a altura dos cards em telas menores */
+  }
+}

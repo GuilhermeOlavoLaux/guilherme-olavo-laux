@@ -108,3 +108,9 @@
     height: 30px;
   }
 }
+/* Mobile */
+@media (max-width: 390px) {
+  .hero {
+    min-height: 940px;
+  }
+}
