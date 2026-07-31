@@ -1,4 +1,21 @@
-import { Code2, Layers, Terminal, Smartphone, Mail } from "lucide-react";
+import { Terminal, Mail } from "lucide-react";
+import {
+  SiReact,
+  SiNextdotjs,
+  SiElectron,
+  SiTypescript,
+  SiJavascript,
+  SiCss,
+  SiRedux,
+  SiNodedotjs,
+  SiKotlin,
+  SiMysql,
+  SiMongodb,
+  SiSpringboot,
+  SiDocker,
+  SiPython,
+  SiServerless,
+} from "@icons-pack/react-simple-icons";
 import React from "react";
 
 import "./TechSkills.css";
@@ -14,49 +31,49 @@ const skillsData: Skill[] = [
   {
     id: 1,
     name: "ReactJS",
-    icon: Code2,
+    icon: SiReact,
     color: "text-cyan-400 bg-cyan-400/10",
   },
   {
     id: 2,
     name: "NextJs",
-    icon: Layers,
+    icon: SiNextdotjs,
     color: "text-zinc-100 bg-zinc-100/10",
   },
   {
     id: 8,
     name: "Electron",
-    icon: Layers,
+    icon: SiElectron,
     color: "text-zinc-100 bg-zinc-100/10",
   },
   {
     id: 5,
     name: "React Native",
-    icon: Smartphone,
+    icon: SiReact,
     color: "text-purple-400 bg-purple-400/10",
   },
   {
     id: 3,
     name: "TypeScript",
-    icon: Terminal,
+    icon: SiTypescript,
     color: "text-blue-500 bg-blue-500/10",
   },
   {
     id: 6,
     name: "JavaScript",
-    icon: Terminal,
+    icon: SiJavascript,
     color: "text-blue-500 bg-blue-500/10",
   },
   {
     id: 7,
     name: "CSS",
-    icon: Terminal,
+    icon: SiCss,
     color: "text-blue-500 bg-blue-500/10",
   },
   {
     id: 8,
     name: "Redux",
-    icon: Terminal,
+    icon: SiRedux,
     color: "text-blue-500 bg-blue-500/10",
   },
 ];
@@ -65,49 +82,49 @@ const skillsBackData: Skill[] = [
   {
     id: 1,
     name: "NodeJs",
-    icon: Code2,
+    icon: SiNodedotjs,
     color: "text-cyan-400 bg-cyan-400/10",
   },
   {
     id: 2,
     name: "Java",
-    icon: Layers,
+    icon: SiServerless,
     color: "text-zinc-100 bg-zinc-100/10",
   },
   {
     id: 8,
     name: "Kotlin",
-    icon: Layers,
+    icon: SiKotlin,
     color: "text-zinc-100 bg-zinc-100/10",
   },
   {
     id: 5,
     name: "MySql",
-    icon: Smartphone,
+    icon: SiMysql,
     color: "text-purple-400 bg-purple-400/10",
   },
   {
     id: 3,
     name: "MongoDb",
-    icon: Terminal,
+    icon: SiMongodb,
     color: "text-blue-500 bg-blue-500/10",
   },
   {
     id: 6,
     name: "SpringBoot",
-    icon: Terminal,
+    icon: SiSpringboot,
     color: "text-blue-500 bg-blue-500/10",
   },
   {
     id: 7,
     name: "Docker",
-    icon: Terminal,
+    icon: SiDocker,
     color: "text-blue-500 bg-blue-500/10",
   },
   {
     id: 8,
     name: "Python",
-    icon: Terminal,
+    icon: SiPython,
     color: "text-blue-500 bg-blue-500/10",
   },
 ];

@@ -4,6 +4,9 @@
 
 .tech_skills-tittle {
   text-align: center;
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }
 
 .tech_skills-box {
@@ -26,6 +29,7 @@
 }
 .tech_skills-tittle2 {
   margin-right: 18px;
+  margin-bottom: 5px;
 }
 
 .tech_skills-grid {
@@ -47,6 +51,7 @@
 .tech_skills-item-icon {
   width: 24px;
   height: 24px;
+  color: #000; /* force black icons */
 }
 
 .tech_skills-item-name {
