@@ -1,6 +1,5 @@
 .tech_skills {
   padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .tech_skills-tittle {
@@ -54,8 +53,29 @@
   font-size: 0.95rem;
 }
 .contact {
-  padding-top: 40px;
-  text-align: center;
+  width: 100%;
+  background-color: black;
+  margin-top: 80px;
+  padding-left: 40px;
+  padding-bottom: 14px;
+}
+.listlink {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: 14px;
+  padding-top: 14px;
+}
+.link1 {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.tech_skills-title {
+  color: white;
+  font-size: 22px;
 }
 
 @media (max-width: 875px) {
@@ -72,7 +92,10 @@
 @media (max-width: 440px) {
   .tech_skills-container {
     border: 2px solid black;
-    width: 310px;
+    width: 300px;
     padding: 20px;
+  }
+  .contact {
+    padding-left: 20px;
   }
 }

@@ -1,5 +1,12 @@
 import React from "react";
-import { Code2, Layers, Database, Terminal, Smartphone } from "lucide-react";
+import {
+  Code2,
+  Layers,
+  Database,
+  Terminal,
+  Smartphone,
+  Mail,
+} from "lucide-react";
 import "./TechSkills.css";
 
 interface Skill {
@@ -150,10 +157,20 @@ export function TechSkills() {
         </div>
       </div>
 
-      <h1 className="contact">
+      <div className="contact">
         <Terminal className="tech_skills-tittle2" />
-        Entre em contato:
-      </h1>
+        <h1 className="tech_skills-title">Entre em contato:</h1>
+        <ul className="listlink">
+          <li className="link1">
+            <Mail />
+            <p>lauxguilherme@hotmail.com</p>
+          </li>
+          <li className="link1">
+            <Mail />
+            <p>linkedin.com/guilherme-laux1999</p>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
