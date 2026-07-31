@@ -1,12 +1,6 @@
+import { Code2, Layers, Terminal, Smartphone, Mail } from "lucide-react";
 import React from "react";
-import {
-  Code2,
-  Layers,
-  Database,
-  Terminal,
-  Smartphone,
-  Mail,
-} from "lucide-react";
+
 import "./TechSkills.css";
 
 interface Skill {
@@ -165,7 +159,27 @@ export function TechSkills() {
             <Mail />
             <p>lauxguilherme@hotmail.com</p>
           </li>
-          <li className="link1">
+          <li
+            className="link1"
+            role="link"
+            tabIndex={0}
+            style={{ cursor: "pointer" }}
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/guilherme-laux1999/",
+                "_blank",
+                "noopener,noreferrer",
+              )
+            }
+            onKeyDown={(e) => {
+              if (e.key === "Enter")
+                window.open(
+                  "https://www.linkedin.com/in/guilherme-laux1999/",
+                  "_blank",
+                  "noopener,noreferrer",
+                );
+            }}
+          >
             <Mail />
             <p>linkedin.com/guilherme-laux1999</p>
           </li>
