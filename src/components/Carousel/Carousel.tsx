@@ -10,13 +10,16 @@ import Riachuelo from "../../assets/riachuelo.png";
 import CocaCola from "../../assets/CocaCola.png";
 import PrivacyTools from "../../assets/PrivacyTools.jpg";
 import ComplianceStation from "../../assets/ComplianceStation.jpg";
+import { Terminal } from "lucide-react";
 
 export default function Carousel() {
   const swiperRef = useRef<SwiperType>();
 
   return (
     <section className="carousel-hero">
-      <h1 className="carrousel-title">Experiência profissional</h1>
+      <h1 className="carrousel-title">
+        <Terminal className="w-5 h-5 text-cyan-400" /> Experiência profissional
+      </h1>
       <div className="carousel-wrapper">
         <div className="carousel-container">
           <Swiper
