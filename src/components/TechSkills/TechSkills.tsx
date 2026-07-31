@@ -18,7 +18,13 @@ const skillsData: Skill[] = [
   },
   {
     id: 2,
-    name: "Next.js",
+    name: "NextJs",
+    icon: Layers,
+    color: "text-zinc-100 bg-zinc-100/10",
+  },
+  {
+    id: 8,
+    name: "Electron",
     icon: Layers,
     color: "text-zinc-100 bg-zinc-100/10",
   },
@@ -35,10 +41,73 @@ const skillsData: Skill[] = [
     color: "text-blue-500 bg-blue-500/10",
   },
   {
-    id: 4,
-    name: "Node.js",
-    icon: Database,
-    color: "text-green-500 bg-green-500/10",
+    id: 6,
+    name: "JavaScript",
+    icon: Terminal,
+    color: "text-blue-500 bg-blue-500/10",
+  },
+  {
+    id: 7,
+    name: "CSS",
+    icon: Terminal,
+    color: "text-blue-500 bg-blue-500/10",
+  },
+  {
+    id: 8,
+    name: "Redux",
+    icon: Terminal,
+    color: "text-blue-500 bg-blue-500/10",
+  },
+];
+
+const skillsBackData: Skill[] = [
+  {
+    id: 1,
+    name: "NodeJs",
+    icon: Code2,
+    color: "text-cyan-400 bg-cyan-400/10",
+  },
+  {
+    id: 2,
+    name: "Java",
+    icon: Layers,
+    color: "text-zinc-100 bg-zinc-100/10",
+  },
+  {
+    id: 8,
+    name: "Kotlin",
+    icon: Layers,
+    color: "text-zinc-100 bg-zinc-100/10",
+  },
+  {
+    id: 5,
+    name: "MySql",
+    icon: Smartphone,
+    color: "text-purple-400 bg-purple-400/10",
+  },
+  {
+    id: 3,
+    name: "MongoDb",
+    icon: Terminal,
+    color: "text-blue-500 bg-blue-500/10",
+  },
+  {
+    id: 6,
+    name: "SpringBoot",
+    icon: Terminal,
+    color: "text-blue-500 bg-blue-500/10",
+  },
+  {
+    id: 7,
+    name: "Docker",
+    icon: Terminal,
+    color: "text-blue-500 bg-blue-500/10",
+  },
+  {
+    id: 8,
+    name: "Python",
+    icon: Terminal,
+    color: "text-blue-500 bg-blue-500/10",
   },
 ];
 
@@ -52,18 +121,39 @@ export function TechSkills() {
 
       <div className="tech_skills-box">
         <div className="tech_skills-container">
-          <h1 className="tech_skills-container-title"> Front End:</h1>
-          {skillsData.map((skill) => {
-            const Icon = skill.icon;
-            return (
-              <div className="tech_skills-container-div">
-                <Icon />
-                <span>{skill.name}</span>
-              </div>
-            );
-          })}
+          <h1 className="tech_skills-container-title">Front End</h1>
+          <div className="tech_skills-grid">
+            {skillsData.map((skill) => {
+              const Icon = skill.icon;
+              return (
+                <div className="tech_skills-item" key={skill.id}>
+                  <Icon className="tech_skills-item-icon" />
+                  <span className="tech_skills-item-name">{skill.name}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="tech_skills-container">
+          <h1 className="tech_skills-container-title">Back End</h1>
+          <div className="tech_skills-grid">
+            {skillsBackData.map((skill) => {
+              const Icon = skill.icon;
+              return (
+                <div className="tech_skills-item" key={skill.id}>
+                  <Icon className="tech_skills-item-icon" />
+                  <span className="tech_skills-item-name">{skill.name}</span>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
+
+      <h1 className="contact">
+        <Terminal className="tech_skills-tittle2" />
+        Entre em contato:
+      </h1>
     </div>
   );
 }
