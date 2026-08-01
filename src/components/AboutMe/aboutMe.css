@@ -1,6 +1,6 @@
 .hero {
   min-height: 100vh;
-  background: #080016;
+  background: black;
   position: relative;
   overflow: hidden;
   display: flex;
